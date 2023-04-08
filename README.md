@@ -11,4 +11,4 @@ The measurements recorded to generate the results of this research were done in 
 Thor Labs DCU224M with cell size 4.65um x 4.65um at 1280 x 1024px
 
 ### Film mounts
-Three size of mounts were developed to house the image setter's printed holograms which will be attached in this repo.
+Three size of quick release magnetic mounts (1x1 inches, 2x2 inches and 35x2 inches) were developed to house the image setter's printed holograms which will be attached inside the folder "Film mounts 3D files".
