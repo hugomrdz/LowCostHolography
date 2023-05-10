@@ -1,4 +1,10 @@
-# 3D binary stereoscopic hologram generation
+# LowCostHolography
+Repository for code used in article "Low-cost holography for structured light"
+
+## Abstract
+In recent times, an increasing amount of interest has been given to the study of structured light fields, which include their generation and characterization techniques, as well as their applications. Crucially, most of these techniques rely on the use of expensive devices, such as liquid crystal spatial light modulators or digital micromirror devices, which also require specialized knowledge and software for their use. In this work, we present a scheme to produce low--cost amplitude holograms for the generation of structured light fields.  We demonstrate the feasibility of this technique by creating a variety of paraxial modes, such as the well--known Laguerre-- and Hermite--Gaussian beams.  We also demonstrate the potential of our technique in solving the phase retrieval problem to generate 2D and 3D holographic images of objects.  Finally, we compare our proposal with the typical generation techniques using a digital micromirror devices.  Our proposal will pave the path to the generation of structured light beams in more affordable ways for their use in undergrad laboratories.
+
+## 3D binary stereoscopic hologram generation
 
 The following it's an explanation of how to generate a 3D binary stereoscopic hologram using Blender and Python from the code attached to this repository. The process is divided into three main processes:
 
@@ -8,11 +14,11 @@ The following it's an explanation of how to generate a 3D binary stereoscopic ho
 
 The ultimate result should be a BMP file which can be printed or used in computational simulations to verify the generated hologram.
 
-## How does it work
+### How does it work
 
 A detailed explanation is given in *inserte cita chida*
 
-## How to use
+### How to use
 
 Make sure you download all the files, especially the file *BinaryStereograhpicHologramFunctions.py* which contains all the important functions for hologram generation. Also, check all the requirements mentioned in *requirements.txt* to avoid having trouble when running the file codes. Also, make sure to verify [set up the directories](https://github.com/ComfyBear41/Test-holograms/blob/main/README.md#setting-up-the-directories) correctly.
 
@@ -75,12 +81,11 @@ When working with high resolutions you may notice that the size of the *NPY file
 
 **NOTE**: The deviation angles can be constructed in several ways, in this case, the proposal is to use $\pi /\alpha$ where $\alpha$ will control the overall deviation angle. As seen in the parameters put by default, small angles are needed.
 
-
-## Example
+### Example
 
 The following is a brief example of the steps mentioned above showing what you would expect when using this code. In this case, both codes and output files will be provided in this project. The resolution used for this example is 3600 dpi, with 3x8 projections and 5 inches of maximum size.
 
-### Subimages generation using Blender
+#### Subimages generation using Blender
 
 In the file *Subimages.blend* there is already available an example of how a scene may look like for the case of a Lego block. The only thing remaining to use this file is to make sure about the directories and press run while in the **Scripting* tab. You should see something similar to the image below.
 
@@ -90,7 +95,7 @@ Once the program finishes generating the different sub-images you should end up 
 
 ![photo1](https://github.com/ComfyBear41/Test-holograms/blob/main/Example/Photos/Step1_1.png)
 
-### Hogel generation from the sub-images
+#### Hogel generation from the sub-images
 
 Once you have a folder with all the sub-images, and making sure about the directories where you want to have the hogels generated, run the file *mainHogelGeneration.npy* and you should end up with *NPY files* similar to the ones in the image below.
 
@@ -98,7 +103,7 @@ Once you have a folder with all the sub-images, and making sure about the direct
 
 In this case, the program used different scales and hence the three files. But it will depend purely on the number of cases you test.
 
-### Binary hologram generation
+#### Binary hologram generation
 
 Finally, the only thing remaining is to generate the holograms using the hogels generated with the code in the file *mainBinaryHologram.py*, for this, make sure again about the directories, and the other variables mentioned you should end up with a *BMP file*. That is your binary hologram! and that's ready to print. It does not seem completely binary but this is probably because of the resolution of your screen. In the following image, you can see an example of what you can expect and a zoom-out of a portion. This *BMP file* will be provided too.  
 
@@ -112,4 +117,12 @@ You know that the angles that you chose will probably work when you see a result
 
 **NOTE:** To run this example from scratch may take a few hours to compile all three steps of the process, and since it's a high resolution plotting the results and making tests may be heavy for the computer. 
 
+## Experimental Design
+The measurements recorded to generate the results of this research were done in the Optics Laboratory of the Photonics and Mathematical Optics Group at Tec de Monterrey under supervision of Benjamín Perez García PhD. In this repository you will find the code required to generate the holograms for the Digital Micromirror Device and the postprocessing scripts used to generate the figures and analysis. 
+
+### Camera hardware
+Thor Labs DCU224M with cell size 4.65um x 4.65um at 1280 x 1024px
+
+### Film mounts
+Three size of quick release magnetic mounts (1x1 inches, 2x2 inches and 35x2 inches) were developed to house the image setter's printed holograms which will be attached inside the folder "Film mounts 3D files".
 
