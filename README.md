@@ -14,10 +14,6 @@ The following it's an explanation of how to generate a 3D binary stereoscopic ho
 
 The ultimate result should be a BMP file which can be printed or used in computational simulations to verify the generated hologram.
 
-### How does it work
-
-A detailed explanation is given in *inserte cita chida*
-
 ### How to use
 
 Make sure you download all the files, especially the file *BinaryStereograhpicHologramFunctions.py* which contains all the important functions for hologram generation. Also, check all the requirements mentioned in *requirements.txt* to avoid having trouble when running the file codes. Also, make sure to verify [set up the directories](https://github.com/ComfyBear41/Test-holograms/blob/main/README.md#setting-up-the-directories) correctly.
